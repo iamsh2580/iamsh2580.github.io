@@ -34,25 +34,11 @@ function onLoginSubmit(event){
     loginForm.classList.add(HiDDEN_CLASSNAME);
     const userName = loginInput.value;
     localStorage.setItem(USERNAME_KEY,userName);
-    // console.log(userName);
-    // console.log(userName);
-    // greeting.innerText ="Hello" +userName;
-    greeting.innerText=`안녕 ${userName}`;
+    greeting.innerText=`안녕하세요 ${userName}님🥳`;
     greeting.classList.remove(HiDDEN_CLASSNAME);
-    // if(userName ==""){
-    //     alert("이름 입력하세요!");
-    // }else if(userName.length > 15){  //글자 수 구하기 .length
-    // alert("너무 길어요~")
-    // }
 
 }
 
-// function handleLink(event){
-
-//     event.preventDefault();
-//     console.log(event);
-//     alert("clicked");
-// }
 
 //11.submit 는 엔터를 누르거나 클릭시 감지
 //loginForm.addEventListener("submit",onLoginSubmit);
@@ -67,8 +53,6 @@ function paintGreetings(userName){
     greeting.innerText =   `Hello ${userName}`;
     greeting.classList.remove(HiDDEN_CLASSNAME);
 }
-
-
 
 const savedUsername =localStorage.getItem(USERNAME_KEY);
 

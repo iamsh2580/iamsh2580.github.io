@@ -6,9 +6,6 @@ const TODOS_KEY = "todos";
 
 let toDos = [];
 
-// function sayHello(item){
-//     console.log("hey",item);
-// }
 
 
 function saveTodos(){

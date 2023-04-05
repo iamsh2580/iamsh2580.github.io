@@ -13,44 +13,52 @@
          3. 받은 정보 화면에 표시
         quiz_ 정보를 어떻게 기억하게하지? 
         html작성 -->
-
-
+        <div class="indexBody">
+        <div class="login-div">
         <!-- 3. div안에 작성 -->
-    <form id = "login-form" class="hidden">
+            <form id = "login-form" class="hidden">
+                
+                <!-- 1. input작성 -->
+                <input required maxlength ="15" type="text" placeholder="이름을 작성하세요"/>
+                <!-- 3-1.input의 유효성 검사를 작용시키려면 input이 form안에 있어야한다. 
+                    3-2. form은 submit되는데 이때, 페이지가 새로고침되는걸 원하지 않는다!-->
+                    <!-- 9. 버튼의 클릭 여부가 아닌 form의 submit여부에 집중! -->
+                    <!-- 2.로그인 버튼 작성 -->
+                    <button>로그인</button>
+                    <!-- <a href="https://nomadcoders.co">노마드 코드로 슝~</a> -->
+                </form>
+                <a id="greeting" class="hidden" ></a>
+            </div>
+            
+            <h2 id="clock"> 00:00</h2>
 
-        <!-- 1. input작성 -->
-         <input required maxlength ="15" type="text" placeholder="이름을 작성하세요"/>
-        <!-- 3-1.input의 유효성 검사를 작용시키려면 input이 form안에 있어야한다. 
-             3-2. form은 submit되는데 이때, 페이지가 새로고침되는걸 원하지 않는다!-->
-             <!-- 9. 버튼의 클릭 여부가 아닌 form의 submit여부에 집중! -->
-        <!-- 2.로그인 버튼 작성 -->
-        <button>로그인</button>
-        <!-- <a href="https://nomadcoders.co">노마드 코드로 슝~</a> -->
-    </form>
-    <h1 id="greeting" class="hidden" ></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="할 일을 적으시오">
-    </form>
-    <ul id="todo-list">
+            <div id="quote">
+                <p></p>
+                <p></p>
+            </div>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+            
+        <div class="todo-div">
+            <form>
+                <label for="todo-input"></label>
+                <input type="text" id="todo-input" placeholder="할 일을 입력하세요" required autocomplete="off">
+                <button id="add-button">추가</button>
+              </form>
+              <div id="container">
+                <ul id="todo-list">
+              </div>
+        </div>
 
-    </ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
-
-
-    <h2 id="clock">00:00</h2>
+</div>
 
         <script src="js/app.js"></script>
         <script src ="js/clock.js"></script>
         <script src="js/quote.js "></script>
         <script src="js/background.js "></script>
-        <script src="js/todo.js"></script>
+        <script src="js/newTodo.js"></script>
         <script src="js/weather.js"></script>
     
 </body>
