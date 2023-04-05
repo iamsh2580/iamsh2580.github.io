@@ -86,8 +86,6 @@ function manageTodo(e){
         removeLocal(todo);
         todo.remove();
     }
-
-
     function removeLocal(todo){
         let todos;
         if(localStorage.getItem("todos")===null){

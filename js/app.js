@@ -50,7 +50,7 @@ function onLoginSubmit(event){
 //link.addEventListener("click",handleLink);
 
 function paintGreetings(userName){
-    greeting.innerText =   `Hello ${userName}`;
+    greeting.innerText =`Hello ${userName}`;
     greeting.classList.remove(HiDDEN_CLASSNAME);
 }
 
@@ -62,7 +62,8 @@ loginForm.classList.remove(HiDDEN_CLASSNAME);
 loginForm.addEventListener("submit",onLoginSubmit);
 }else{
     //인사를 한다
-    paintGreetings(savedUsername);
+        alert("이름을 입력하세요");
+    //paintGreetings(savedUsername);
 
 
 }
